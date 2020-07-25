@@ -3,18 +3,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="dom.js"></script>
     <title>SODUKO GAME</title>
 </head>
 <body>
 
-    <button id="btn">Start</button>
-    <button id="btntwo">Stop</button>
+    <button id="" onclick="time()">Start</button>
+    
+    <div id="four" >  </div>
+    <div id="five" >  </div>
+
+    
+    <button id="reset" onclick="reset()">Reset</button>
+    <button id="" onclick="got()" >Submit</button>
+
     <div id="one">
       
             <div id="two">
                 <div id="three" >5</div>
                 <div  id="three">3</div>
-                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three"  >
                 <div  id="three">6</div>
                 <input type="text" size="1"  id="three">
                 <input type="text" size="1"  id="three">
@@ -27,87 +35,87 @@
 
             <div id="two">
 
-                <div id="three" >5</div>
-                <div  id="three">3</div>
-                <input type="text" size="1"  id="three">
-                <div  id="three">6</div>
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <div  id="three">9</div>
-                <div  id="three">8</div>
-            </div>
-
-
-            <div id="two">
-
-                <div id="three" >5</div>
-                <div  id="three">3</div>
-                <input type="text" size="1"  id="three">
-                <div  id="three">6</div>
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <div  id="three">9</div>
-                <div  id="three">8</div>
-            </div>  
-
-
-            <div id="two">
-                <div id="three" >5</div>
-                <div  id="three">3</div>
-                <input type="text" size="1"  id="three">
-                <div  id="three">6</div>
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <div  id="three">9</div>
-                <div  id="three">8</div>
-            </div>
-
-            <div id="two">
-                <div id="three" >5</div>
-                <div  id="three">3</div>
-                <input type="text" size="1"  id="three">
-                <div  id="three">6</div>
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <div  id="three">9</div>
-                <div  id="three">8</div>
-            </div>
-            <div id="two">
-                <div id="three" >5</div>
-                <div  id="three">3</div>
-                <input type="text" size="1"  id="three">
-                <div  id="three">6</div>
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <div  id="three">9</div>
-                <div  id="three">8</div>
-            </div>  
-            <div id="two">
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-            </div>
-            <div id="two">
-                <div id="three" >2</div>
-                <div  id="three">8</div>
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <input type="text" size="1"  id="three">
-                <div  id="three">5</div>
                 <input type="text" size="1"  id="three">
                 <div  id="three">7</div>
+                <input type="text" size="1"  id="three">
+                <div  id="three">1</div>
                 <div  id="three">9</div>
+                <div  id="three">5</div>
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+            </div>
+
+
+            <div id="two">
+
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <div  id="three">6</div>
+                <input type="text" size="1"  id="three">
+            </div>  
+
+
+            <div id="two">
+                <div  id="three" style="padding-left: 46px;">8</div>
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <div  id="three">4</div>
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <div  id="three">7</div>
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+            </div>
+
+            <div id="two">
+                <input type="text" size="1"  id="three">
+                <div  id="three">6</div>
+                <input type="text" size="1"  id="three">
+                <div  id="three">8</div>
+                <input type="text" size="1"  id="three">
+                <div  id="three">3</div>
+                <input type="text" size="1"  id="three">
+                <div  id="three">2</div>
+                <input type="text" size="1"  id="three">
+            </div>
+            <div id="two">
+                <input type="text" size="1"  id="three" style="margin-right: 30px;">
+                <input type="text" size="1"  id="three"  style="margin-left: -38px;margin-right: 50px;">
+                <div  id="three" style="margin-left: -50px;">3</div>
+                <input type="text" size="1"  id="three" style="margin-right: 35px;">
+                <input type="text" size="1"  id="three"  style="margin-left: -38px;margin-right: 50px;">
+                <div  id="three" style="margin-left: -50px;">1</div>
+                <input type="text" size="1"  id="three" style="margin-right: 35px;">
+                <input type="text" size="1"  id="three" style="margin-left: -38px;margin-right: 50px;">
+                <div  id="three" style="margin-left: -50px;">6</div>
+            </div>  
+            <div id="two">
+                <input type="text" size="1"  id="three">
+                <div  id="three">6</div>
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+            </div>
+            <div id="two">
+                <input type="text" size="1"  id="three" >
+                <input type="text" size="1"  id="three">
+                <input type="text" size="1"  id="three">
+                <div  id="three">4</div>
+                <div  id="three">1</div>
+                <div  id="three">9</div>
+                <input type="text" size="1"  id="three">
+                <div  id="three">8</div>
+                <input type="text" size="1"  id="three">
             </div>
             <div id="two">
                 <div id="three" >2</div>
@@ -122,6 +130,8 @@
             </div> 
          
     </div>
+
+    
 
     
 
