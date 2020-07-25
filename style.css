@@ -1,6 +1,37 @@
-h1{
+#one{
 
-    display:inline;
+    display:grid;
+    grid-template-columns: repeat(3,auto);
     border: 1px solid black;
-    margin-left: 100px;
+    margin-top: 50px;
+    margin-left: 400px;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+#two{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    border: 1px solid black; 
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+#btn{
+
+    margin-top: 80px;
+    margin-left: 400px;
+}
+
+#btntwo{
+    float: right;
+    margin-top: 80px;
+    margin-right: 430px;
+}
+
+#three{
+    border: 1px solid black;
+   
 }
