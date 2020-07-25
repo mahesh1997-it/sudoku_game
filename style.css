@@ -15,7 +15,7 @@
     grid-template-columns: repeat(3,auto);
     border: 1px solid black; 
     text-align: center;
-    font-size: 40px;
+    font-size: 100px;
     
 }
 
@@ -33,5 +33,17 @@
 
 #three{
     border: 1px solid black;
+    font-size: large;
    
 }
+
+#four{
+     display: inline;
+     
+}
+
+#five{
+    display: inline;
+    
+}
+
