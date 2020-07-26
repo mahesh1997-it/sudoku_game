@@ -1,7 +1,7 @@
 function time()
 {
     var a=59;
-    var b=4;
+    var b=3;
     
       setInterval(countdown, 1000);
     function countdown() {
@@ -15,6 +15,7 @@ function time()
             
           } else {
             document.getElementById('four').innerHTML = "You Lost" ;
+            
          }
 
         }} 
@@ -47,8 +48,9 @@ function time()
 
           function reset(){
 
-            document.querySelectorAll("input").reset();
-            document.getElementById('four').reset();
+            document.getElementById("one").reset();
+            document.querySelectorAll("two").reset();
+            
           }
 
 
