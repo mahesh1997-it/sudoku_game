@@ -1,13 +1,18 @@
+body{
+    background-color: blueviolet;
+}
+
 #one{
 
     display:grid;
     grid-template-columns: repeat(3,auto);
     border: 1px solid black;
-    margin-top: 50px;
-    margin-left: 400px;
+    margin-top: 5%;
+    margin-left: 30%;
     width: 500px;
     height: 500px;
-    margin-bottom: 100px;
+    margin-bottom: 10%;
+    background-color: white;
 }
 
 #two{
@@ -21,14 +26,40 @@
 
 #btn{
 
-    margin-top: 80px;
-    margin-left: 400px;
+    margin-top: 0px;
+    margin-left: 40%;
+    background-color: green;
+    border-radius: 10px;
+    font-size: 20px;
+    
+    
+}
+
+#btn:hover{
+    width: 70px;
+    
+    font-weight: bolder;
+    color:chartreuse;
+
+
 }
 
 #btntwo{
-    float: right;
-    margin-top: 80px;
-    margin-right: 430px;
+    margin-top: 0px;
+    margin-right: 0px;
+    background-color: tomato;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#btntwo:hover{
+    
+    width: 90px;
+    font-weight: bolder;
+    color:chartreuse;
+
+    
+
 }
 
 #three{
@@ -39,6 +70,7 @@
 
 #four{
      display: inline;
+     color: black;
      
 }
 
@@ -46,4 +78,27 @@
     display: inline;
     
 }
+#six{
+    display: block;
+    margin-left: 44%;
+    color: maroon;
+
+}
+
+#six:hover{
+    
+     color:chartreuse;
+}
+
+
+#reset{
+
+    background-color: cyan;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+
+
 
